@@ -1,19 +1,20 @@
-// undefined
-var x;
-console.log("Value of x=" + x);
+let s = "000000111111100000";
+let cnt = 0;
+let currChr = "*";
+let f = 1;
 
-// number
-x = 250;
-console.log("Value of x=" + x);
+for (let i = 0; i < s.length; i++) {
+  if (s[i] === currChr) {
+    cnt = cnt + 1;
+  } else {
+    cnt = 1;
+    currChr = s[i];
+  }
 
-// string
-str = "Hello All";
-console.log("Value of str=" + str);
+  if (cnt == 7) {
+    console.log("YES");
+    f = 0;
+  }
+}
 
-// boolean
-b = false;
-console.log("value of bool=" + b);
-
-// null -> intentional absence of any object value
-x = null;
-console.log("Value of x=" + x);
+if (f) console.log("NO");
