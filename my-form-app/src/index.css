@@ -1,6 +1,7 @@
 body {
   background: linear-gradient(to right, rgb(191, 223, 234), lightgray);
   height: 100vh;
+  text-align: center;
 }
 
 form {
